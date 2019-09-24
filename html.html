@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Javascript Practice</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+
+        <script>
+            var x=10;  // for datatype check (document.write(typeof(x/y/z));)
+            var y=20;
+
+            document.write("<h1>arithmatic bainary operator.....</h1>");
+
+
+            document.write(x+y);
+            document.write("<br/>");
+            document.write(x-y);
+            document.write("<br/>");
+            document.write(x*y);
+            document.write("<br/>");
+            document.write(x/y);
+            document.write("<br/>");
+            document.write(x%y);
+            document.write("<br/>");
+
+
+
+            var firstName ="Sumi";
+            var lastName ="Akter";
+
+            document.write("Full Name is: "+firstName+" "+lastName);
+
+            document.write("<br/>");
+
+            document.write("<h1>arithmatic unary operator.....</h1>");
+
+            var x=10;
+            var y=20;
+
+            // document.write(x++);
+            // document.write("<br/>");
+            // document.write(x);
+            // document.write("<br/>");
+            //
+            // var x1=10;
+            // var y1=10;
+            //
+            // document.write(x1--);
+            // document.write("<br/>");
+           // doc/ument.write(x1);
+
+             var x=10;
+             var y=10;
+
+             document.write(x++); // 10
+             document.write("<br/>");
+             document.write(++x); // 12
+             document.write("<br/>");
+             document.write(x++); // 12
+             document.write("<br/>");
+             document.write(--x); // 12
+             document.write("<br/>");
+             document.write(x++); 12
+             document.write("<br/>");
+
+
+             var x=10;
+             document.write(-x);    // nagation sign(-) it converts positive to negative & negative to positive;
+             document.write("<br/>");
+
+
+
+             document.write("<h1>assignment operator.....</h1>");
+
+
+            var x=10;
+            var y=20;
+            document.write(x+=y); // it means (x=x+y)
+            document.write("<br/>");
+            document.write(x-=y); // it means (x=x-y)
+            document.write("<br/>");
+            document.write(x*=y); // it means (x=x*y)
+            document.write("<br/>");
+            document.write(x/=y); // it means (x=x/y)
+            document.write("<br/>");
+            document.write(x%=y); // it means (x=x%y)
+            document.write("<br/>");
+
+
+
+            document.write("<h1>conditional operator....</h1>");
+
+            var x="30";
+            var y=20;
+            document.write(x>y); //true
+            document.write("<br/>");
+            document.write(x>=y); // true
+            document.write("<br/>");
+            document.write(x<y); // false
+            document.write("<br/>");
+            document.write(x==y); // false
+            document.write("<br/>");
+            document.write(x!=y); //true
+            document.write("<br/>");
+            document.write(x===y); // false
+            document.write("<br/>");
+            document.write(x!==y); // true
+            document.write("<br/>");
+
+
+            document.write("<h1>logical operator......</h1>");
+
+            var x=10;
+            var y=20;
+            var z=30;
+            var a=true;
+
+            document.write((x>y)&&(y>z));
+            document.write("<br/>");
+            document.write((x>y)||(y>z));
+            document.write("<br/>");
+            document.write(a);
+            document.write("<br/>");
+            document.write(!a);
+            document.write("<br/>");
+
+
+            document.write("<h1>statement.....</h1>");
+
+
+            document.write("<h4>if condition.....</h4>");
+
+            var x=10;
+            var y=20;
+
+            if(x<y){
+                document.write("hello world");
+            }
+
+            document.write("<h4>if else condition.....</h4>");
+
+            var x=10;
+            var y=20;
+
+            if(x>y){
+                document.write("hello world");
+            }
+            else{
+                document.write("hello javascript");
+            }
+
+            document.write("<h4>if else if condition.....</h4>");
+
+            var x=10;
+            var y=20;
+            var z=30;
+
+            if(x>y){
+                document.write("hello world");
+            }
+            else if(y>z){
+                document.write("hello javascript");
+            }
+            else if(z>x){
+                document.write("hello bitm");
+            }
+            else{
+                document.write("hello dhaka");
+            }
+
+            document.write("<h4>switch condition.....</h4>");
+
+            var x=10;
+
+            switch(x){
+                case 5:
+                    document.write("Hello World");
+                    break;
+                case 10:
+                    document.write("Hello Javascript");
+                    break;
+                case 15:
+                    document.write("Hello Bitm");
+                    break;
+                default:
+                    document.write("Hello Dhaka");
+            }
+
+            document.write("<h1>repeated statement...</h1>");
+
+            var x;
+
+            for (x=10; x<=15; x++){
+                document.write("hello world<br/>");
+            }
+
+            var x;
+
+            for (x=99; x>=88; x--){
+                document.write(x+"<br/>");
+            }
+
+            var x=10;
+
+            while (x<15){
+                document.write('hello world<br/>');
+                x++;
+            }
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
